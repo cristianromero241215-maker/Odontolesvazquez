@@ -2,46 +2,46 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clínica Dental - Dra. Lesly Vázquez</title>
-  <meta name="description" content="Limpiezas, endodoncias, extracciones, coronas, incrustaciones y resinas. Agenda tu cita con la Dra. Lesly Vázquez.">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta name="description" content="Limpiezas, endodoncias, extracciones, coronas, incrustaciones y resinas. Agenda tu cita con la Dra. Lesly Vázquez." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script>
-    // Coloca aquí las URLs de tus Apps Scripts una vez desplegados
-    window.APPS_SCRIPT_CAL_URL = "https://script.google.com/macros/s/AKfycbzVPvx-3jTqpvnYD_leOWPPPOLiOMRZjIRTRB4SftYmcp_hAohJtqJWtskT9G62DP5K/exec";
-    window.APPS_SCRIPT_SHEETS_URL = "https://script.google.com/macros/s/AKfycbzVPvx-3jTqpvnYD_leOWPPPOLiOMRZjIRTRB4SftYmcp_hAohJtqJWtskT9G62DP5K/exec";
-    window.WHATSAPP = "+523323303334";
+    const APPS_SCRIPT_URL = "URL_DE_TU_API_AQUI";
+    const WHATSAPP_NUMBER = "+523323303334";
   </script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#inicio" aria-label="Inicio">
-        <img src="assets/logo.png" alt="Logo Dra. Lesly Vázquez"/>
+      <a class="logo" href="#inicio" aria-label="Inicio de la página">
+        <img src="assets/logo.png" alt="Logo de la Clínica Dental Dra. Lesly Vázquez" />
         <span>Dra. Lesly Vázquez</span>
       </a>
       <nav class="main-nav" aria-label="Principal">
         <a href="#inicio" class="active">Inicio</a>
         <a href="servicios.html">Servicios</a>
         <a href="signos-sintomas.html">Signos y Síntomas</a>
-        <a href="#agendar">Agendar</a>
+        <a href="#agendar-cita">Agendar</a>
         <a href="#contacto">Contacto</a>
         <a href="admin/login.html" class="admin-link">Admin</a>
       </nav>
-      <button class="burger" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <button class="burger" aria-label="Abrir menú de navegación" aria-expanded="false">☰</button>
     </div>
   </header>
 
-  <main id="inicio">
-    <section class="hero">
+  <main>
+    <section id="inicio" class="hero">
       <div class="container hero-inner">
         <div class="hero-copy">
           <h1>Tu sonrisa, en manos expertas</h1>
           <p>Odontología integral con un trato humano y profesional. Agenda tu cita con la Dra. Lesly Vázquez.</p>
           <div class="hero-cta">
-            <a href="#agendar" class="btn btn-primary">Agendar cita</a>
-            <a href="https://wa.me/523323303334" target="_blank" class="btn btn-outline"><img class="icon" src="assets/whatsapp.png" alt=""> WhatsApp</a>
+            <a href="#agendar-cita" class="btn btn-primary">Agendar cita</a>
+            <a href="https://wa.me/523323303334" target="_blank" class="btn btn-outline"><img class="icon" src="assets/whatsapp.png" alt="Ícono de WhatsApp" /> WhatsApp</a>
           </div>
         </div>
         <div class="hero-art" aria-hidden="true"></div>
@@ -53,83 +53,112 @@
       <h2>Servicios</h2>
       <p class="section-sub">Tratamientos con enfoque conservador y resultados duraderos.</p>
       <div class="cards">
-        <a class="card" href="servicios.html#limpiezas"><h3>Limpiezas Dentales</h3><p>Profilaxis y mantenimiento periodontal.</p></a>
-        <a class="card" href="servicios.html#endodoncias"><h3>Endodoncias</h3><p>Conserva tus dientes con tratamiento de conducto.</p></a>
-        <a class="card" href="servicios.html#extracciones"><h3>Extracciones</h3><p>Cuando no es posible la conservación de la pieza.</p></a>
-        <a class="card" href="servicios.html#coronas"><h3>Coronas</h3><p>Restauraciones totales estéticas y resistentes.</p></a>
-        <a class="card" href="servicios.html#incrustaciones"><h3>Incrustaciones</h3><p>Alternativa conservadora a las coronas.</p></a>
-        <a class="card" href="servicios.html#resinas"><h3>Resinas</h3><p>Restauraciones estéticas del color del diente.</p></a>
+        <a class="card" href="servicios.html#limpiezas">
+          <h3>Limpiezas Dentales</h3>
+          <p>Profilaxis y mantenimiento periodontal.</p>
+        </a>
+        <a class="card" href="servicios.html#endodoncias">
+          <h3>Endodoncias</h3>
+          <p>Conserva tus dientes con tratamiento de conducto.</p>
+        </a>
+        <a class="card" href="servicios.html#extracciones">
+          <h3>Extracciones</h3>
+          <p>Cuando no es posible la conservación de la pieza.</p>
+        </a>
+        <a class="card" href="servicios.html#coronas">
+          <h3>Coronas</h3>
+          <p>Restauraciones totales estéticas y resistentes.</p>
+        </a>
+        <a class="card" href="servicios.html#incrustaciones">
+          <h3>Incrustaciones</h3>
+          <p>Alternativa conservadora a las coronas.</p>
+        </a>
+        <a class="card" href="servicios.html#resinas">
+          <h3>Resinas</h3>
+          <p>Restauraciones estéticas del color del diente.</p>
+        </a>
       </div>
     </section>
 
-      <section id="agendar-cita" class="cita-section container">
+    <section id="agendar-cita" class="cita-section container">
       <h2>Agendar Cita</h2>
       <form id="formCita" class="cita-form">
         <div class="form-row">
           <div class="form-group">
-            <label>Nombre completo</label>
-            <input type="text" id="nombre" required placeholder="Tu nombre">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
           </div>
           <div class="form-group">
-            <label>Teléfono</label>
-            <input type="tel" id="telefono" required placeholder="+52XXXXXXXXXX">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="+52XXXXXXXXXX" />
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group">
-            <label>Email</label>
-            <input type="email" id="email" required placeholder="tucorreo@dominio.com">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="tucorreo@dominio.com" />
           </div>
           <div class="form-group">
-            <label>Tratamiento</label>
-            <select id="tratamiento" required>
+            <label for="esPrimerCita">¿Es primer cita?</label>
+            <select id="esPrimerCita" name="esPrimerCita" required>
               <option value="">-- Selecciona --</option>
-              <option value="Limpieza dental">Limpieza dental</option>
-              <option value="Endodoncia">Endodoncia</option>
-              <option value="Extracción">Extracción</option>
-              <option value="Corona">Corona</option>
-              <option value="Incrustación">Incrustación</option>
-              <option value="Resina">Resina</option>
+              <option value="Si">Sí</option>
+              <option value="No">No</option>
             </select>
           </div>
         </div>
+        
+        <div id="primerCitaCampos" style="display:none;">
+          <h3>Síntomas y Motivo</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="dolor">¿Tienes dolor actualmente?</label>
+              <select id="dolor" name="dolor">
+                <option value="No">No</option>
+                <option value="Sí">Sí</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="motivo_sintomas">Describe tus síntomas o motivo de la consulta</label>
+            <textarea id="motivo_sintomas" name="motivo_sintomas" rows="3" placeholder="Ej. Dolor de muela, sangrado de encías, inflamación..."></textarea>
+          </div>
+        </div>
+
+        <div id="citaSeguimientoCampos" style="display:none;">
+          <h3>Tratamiento y Última Limpieza</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="tratamiento">Tratamiento</label>
+              <select id="tratamiento" name="tratamiento">
+                <option value="">-- Selecciona --</option>
+                <option value="Limpieza dental">Limpieza dental</option>
+                <option value="Endodoncia">Endodoncia</option>
+                <option value="Extracción">Extracción</option>
+                <option value="Corona">Corona</option>
+                <option value="Incrustación">Incrustación</option>
+                <option value="Resina">Resina</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="ultimaLimpieza">Última limpieza dental</label>
+              <input type="date" id="ultimaLimpieza" name="ultimaLimpieza">
+            </div>
+          </div>
+        </div>
 
         <div class="form-row">
           <div class="form-group">
-            <label>Fecha de la cita</label>
-            <input type="date" id="fecha" required>
+            <label for="fecha">Fecha de la cita</label>
+            <input type="date" id="fecha" name="fecha" required>
           </div>
           <div class="form-group">
-            <label>Hora disponible</label>
-            <select id="hora" required>
+            <label for="hora">Hora disponible</label>
+            <select id="hora" name="hora" required>
               <option value="">-- Selecciona una fecha primero --</option>
             </select>
           </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label>Última limpieza dental</label>
-            <input type="date" id="ultimaLimpieza">
-          </div>
-          <div class="form-group">
-            <label>Dolor actual</label>
-            <select id="dolor" required>
-              <option value="No">No</option>
-              <option value="Sí">Sí</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label>Síntomas</label>
-          <textarea id="sintomas" rows="3" placeholder="Ej. inflamación, sangrado, sensibilidad..."></textarea>
-        </div>
-
-        <div class="form-group">
-          <label>Motivo de la cita</label>
-          <textarea id="motivo" rows="3" placeholder="Describe brevemente tu motivo de consulta"></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary">
@@ -139,13 +168,16 @@
       </form>
       <div id="mensaje" class="mensaje"></div>
     </section>
+
+    <section id="contacto" class="contact-section">
+      </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="brand">
-        <img src="assets/logo.png" alt="Logo" />
-        <div><strong>Dra. Lesly Vázquez</strong><br><small>© 2025 Todos los derechos reservados</small></div>
+        <img src="assets/logo.png" alt="Logo de la clínica" />
+        <div><strong>Dra. Lesly Vázquez</strong><br /><small>© 2025 Todos los derechos reservados</small></div>
       </div>
       <nav class="footer-nav">
         <a href="#inicio">Inicio</a>
@@ -154,86 +186,13 @@
         <a href="admin/login.html">Admin</a>
       </nav>
       <div class="social">
-        <a href="https://www.instagram.com/dra.lesly_vazquez" target="_blank"><img src="assets/instagram.png" alt="Instagram"/></a>
+        <a href="https://www.instagram.com/dra.lesly_vazquez" target="_blank"><img src="assets/instagram.png" alt="Instagram" /></a>
       </div>
     </div>
   </footer>
 
-  <a href="https://wa.me/523323303334" class="whatsapp-float" target="_blank" aria-label="WhatsApp"><img src="assets/whatsapp.png" alt=""></a>
+  <a href="https://wa.me/523323303334" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp"><img src="assets/whatsapp.png" alt="Ícono de WhatsApp" /></a>
 
-  <script>
-    const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzYPvCIL5zvNg5FWWQ6aYz74pqs2ASBDbABcqpXJcyIfimLQLKmY_d4OCy2cPH2i0-k/exec";
-
-    const form = document.getElementById("formCita");
-    const fechaInput = document.getElementById("fecha");
-    const horaSelect = document.getElementById("hora");
-    const mensajeBox = document.getElementById("mensaje");
-    const btn = form.querySelector("button");
-
-    fechaInput.setAttribute("min", new Date().toISOString().split("T")[0]);
-
-    fechaInput.addEventListener("change", async () => {
-  horaSelect.innerHTML = "<option>Cargando...</option>";
-  horaSelect.disabled = true;
-  try {
-    const res = await fetch(`${APPS_SCRIPT_URL}?date=${fechaInput.value}`);
-    const data = await res.json();  // Esto funciona solo si Apps Script devuelve JSON correctamente
-    if (!data.ok) throw new Error(data.message || "Error al cargar horarios");
-
-    horaSelect.innerHTML = data.hours.length
-      ? '<option value="">-- Selecciona una hora --</option>' + data.hours.map(h => `<option value="${h}">${h}</option>`).join('')
-      : '<option value="">No hay horarios disponibles</option>';
-
-  } catch (err) {
-    console.error(err);
-    horaSelect.innerHTML = '<option value="">Error al cargar horarios</option>';
-  } finally {
-    horaSelect.disabled = false;
-  }
-});
-
-    form.addEventListener("submit", async e => {
-      e.preventDefault();
-      mensajeBox.style.display = "none";
-      btn.classList.add("loading");
-
-      const payload = {
-        nombre: document.getElementById("nombre").value.trim(),
-        telefono: document.getElementById("telefono").value.trim(),
-        email: document.getElementById("email").value.trim(),
-        tratamiento: document.getElementById("tratamiento").value,
-        fecha: fechaInput.value,
-        hora: horaSelect.value,
-        ultimaLimpieza: document.getElementById("ultimaLimpieza").value,
-        dolor: document.getElementById("dolor").value,
-        sintomas: document.getElementById("sintomas").value,
-        motivo: document.getElementById("motivo").value
-      };
-
-      try {
-        const res = await fetch(APPS_SCRIPT_URL, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload)
-        });
-        const data = await res.json();
-        if (!data.ok) throw new Error(data.message || "No se pudo registrar la cita");
-
-        mensajeBox.textContent = "✅ Cita registrada con éxito!";
-        mensajeBox.className = "mensaje exito";
-        mensajeBox.style.display = "block";
-        mensajeBox.style.opacity = "1";
-        form.reset();
-        horaSelect.innerHTML = "<option>-- Selecciona una fecha primero --</option>";
-      } catch (err) {
-        mensajeBox.textContent = `❌ ${err.message}`;
-        mensajeBox.className = "mensaje error";
-        mensajeBox.style.display = "block";
-        mensajeBox.style.opacity = "1";
-      } finally {
-        btn.classList.remove("loading");
-      }
-    });
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
